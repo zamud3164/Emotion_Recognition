@@ -20,5 +20,9 @@ To skip the IEMOCAP prprocessing, skip steps 2-5.
 
 5. Using the csv file created in the last step, we further prepare the audio files and splits them so they are ready to be used for training. Open the "prepare_audio_features.py" located in the folder "preprocessing_data" and run it. This will then create two files, "audio_test_v0" and "audio_train_v0". These two files are also provided from before in the data folder.
 
-6. Now that audio files are ready, we will prepare the text data files. Open and run the "extract_text_transcriptions.py" file in the folder "preprocessing_data". This file will extract text and then split it into training and testing. It will create two files, "text_train.csv" and "text_test.csv". These files are also provided from before in the data folder. 
+6. Now that audio files are ready, we will prepare the text data files. Open and run the "extract_text_transcriptions.py" file in the folder "preprocessing_data". This file will extract text and then split it into training and testing. It will create two files, "text_train.csv" and "text_test.csv". These files are also provided from before in the data folder.
+
+7. Now that we have prepared our training data, we will move over to the main part of the code, the training. Open the notebook "CNN.ipynb" and run the cells. In this notebook, we first load the data files, vectorize the text data, and fuse text and audio data. After fusing the data, we define our model architecture and other functions such as validation, training step, and saving checkpoints. We then instiate the model and run it for 100 epochs. Then we create the plots to see the loss plot and accuracy plot.
+
+8. Should validation be a single file or in the same file??
 
