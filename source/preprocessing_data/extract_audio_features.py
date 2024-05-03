@@ -59,10 +59,8 @@ for sess in (range(1, 6)):
                 feature_list.append(silence)  # silence
 
                 y_harmonic = librosa.effects.hpss(y)[0]
-                feature_list.append(np.mean(y_harmonic) * 1000)  # harmonic (scaled by 1000)
-
-                # based on the pitch detection algorithm mentioned here:
-                # http://access.feld.cvut.cz/view.php?cisloclanku=2009060001
+                feature_list.append(np.mean(y_harmonic) * 1000)  # harmonic 
+                
                 cl = 0.45 * sig_mean
                 center_clipped = []
                 for s in y:
