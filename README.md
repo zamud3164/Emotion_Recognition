@@ -8,7 +8,7 @@ IEMOCAP will therefore not be provided here in this repo. However code for prepr
 ### Running the project
 To run this project from scratch, IEMOCAP is needed, see above for how to get IEMOCAP.
 If IEMOCAP is not available, the model can be trained using the preprocessed and splitted audio and text data files. See the data folder to see the provided files.
-To skip the IEMOCAP prprocessing, skip steps 2-5.
+To skip the IEMOCAP prprocessing, skip steps 2-6. In step 7, we train the model. In step 8, we can validate the model, either using the model created in step 6 or using the model already saved in the rpeository by just running the whole of step 8.
 
 1. Clone the repository and locate the root folder. In the root folder, run "pip install -r requirements.txt" to install all the necessary dependencies.
    
@@ -24,5 +24,5 @@ To skip the IEMOCAP prprocessing, skip steps 2-5.
 
 7. Now that we have prepared our training data, we will move over to the main part of the code, the training. Open the notebook "CNN.ipynb" and run the cells. In this notebook, we first load the data files, vectorize the text data, and fuse text and audio data. After fusing the data, we define our model architecture and other functions such as validation, training step, and saving checkpoints. We then instiate the model and run it for 100 epochs. Then we create the plots to see the loss plot and accuracy plot.
 
-8. Should validation be a single file or in the same file??
+8. Run through "validation.ipynb" to validate the trained model using test data. First the notebook will download the test data, both audio and text. Then it will vectorize the text data and then fuse both modlaities to a combined test data. Then it will use this data to evaluate the model.
 
