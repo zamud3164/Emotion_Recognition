@@ -1,6 +1,9 @@
 # Emotion_Recognition
 This project, emotion recognition using multimodal data, was done in the course ACIT4630, in spring 2024. 
 
+### Code
+The code for emotion recognition is extracted from several sources and then fused together and modified to suit our task.  Preprocessing the IEMOCAP dataset and extracting features are from https://github.com/Demfier/multimodal-speech-emotion-recognition/tree/master. Setting up the training environment and the logic for saving checkpoints is from https://github.com/IliaZenkov/transformer-cnn-emotion-recognition. These works are also published. There has been made changes for example adding more features and removing unnecessary parts not needed for our specific task. The model architecture is not from these sources but set up by us on the basis of experiments. These two repositories we have used are cited in our report too. 
+
 ### Dataset
 IEMOCAP is used for this project. IEMOCAP can be downloaded by following this link: https://hioa365-my.sharepoint.com/:f:/g/personal/zamud3164_oslomet_no/En_HHH04uxxBjLoIsivNEhEBuMV2j2kscpLw8YoEEBWm-g?e=Y1Cscr. This link will be available till mid june.
 If IEMOCAP not available, the model can be trained and evaluated using the preprocessed files provided under the folder "data", for more details, see the section below.
