@@ -8,6 +8,9 @@ The code for emotion recognition is extracted from several sources and then fuse
 IEMOCAP is used for this project. IEMOCAP can be downloaded by following this link: https://hioa365-my.sharepoint.com/:f:/g/personal/zamud3164_oslomet_no/En_HHH04uxxBjLoIsivNEhEBuMV2j2kscpLw8YoEEBWm-g?e=Y1Cscr. This link will be available till mid june.
 If IEMOCAP not available, the model can be trained and evaluated using the preprocessed files provided under the folder "data", for more details, see the section below.
 
+### Saved Model
+The trained models are too big and therefore it is not possible to push them to this github repo. Download the four trained models from this link: https://hioa365-my.sharepoint.com/:f:/g/personal/zamud3164_oslomet_no/ElfJL7rP-TpBo_R_0xNrwOsBdncHqtGWBeS1xejP4oBuvw?e=OshQ8p and save it in the savedModel directory of this project. Then the notebook CNN_v1 and CNN_v2 can be used to check the model performance without having to train the models yourself. To check a model without training, run all celles in the notebooks excluding the one cell for training. 
+
 ### Running the project
 To run this project from scratch, IEMOCAP is needed, see above for how to get IEMOCAP.
 If IEMOCAP not available, the model can be trained and evaluated using the preprocessed files provided under the folder "data".
