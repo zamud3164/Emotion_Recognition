@@ -36,7 +36,7 @@ for sess in range(1, 6):
                 audio_vectors[truncated_wav_file_name] = truncated_wav_vector
         except:
             print('An exception occured for {}'.format(orig_wav_file))
-    with open('data/audio_vectors/audio_vectors_{}.pkl'.format(sess), 'wb') as f:
+    with open('data/audio_vectors_{}.pkl'.format(sess), 'wb') as f:
         pickle.dump(audio_vectors, f)
 
     print('Session {} done.'.format(sess))

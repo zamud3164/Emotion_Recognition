@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split
 import json
 from sklearn.preprocessing import MinMaxScaler
 
-df = pd.read_csv('../data/audio_features_v0.csv')
+df = pd.read_csv('data/audio_features_v0.csv')
 df = df[df['label'].isin([0, 1, 2, 3, 4, 5, 6, 7])]
 
 # change 7 to 2
@@ -50,8 +50,8 @@ X_expanded.head()
 
 x_train, x_test = train_test_split(X_expanded, test_size=0.20)
 
-x_train.to_csv('../data/audio_train_v0.csv', index=False)
-x_test.to_csv('../data/audio_test_v0.csv', index=False)
+x_train.to_csv('data/audio_train_v0.csv', index=False)
+x_test.to_csv('data/audio_test_v0.csv', index=False)
 
 print(x_train.shape, x_test.shape)
 
